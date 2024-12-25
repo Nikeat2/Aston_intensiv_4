@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/material_dynamic_neutral90"
+    android:orientation="vertical"
+    tools:context=".UserDetailsFragment">
+
+    <ImageView
+        android:id="@+id/ivDetailedUser"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/photo_of_a_user" />
+
+    <EditText
+        android:id="@+id/etDetailedUserSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="name"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        tools:ignore="LabelFor"
+        tools:text="Surname" />
+
+    <EditText
+        android:id="@+id/etDetailedUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="name"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        tools:ignore="LabelFor"
+        tools:text="Name" />
+
+    <EditText
+        android:textSize="24sp"
+        tools:text = "89193332244"
+        android:id="@+id/etDetailedUserPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="phone"
+        android:inputType="phone"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/save_changes"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
